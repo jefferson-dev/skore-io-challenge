@@ -24,38 +24,50 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Api developed using GraphQL with the following Query and Mutation:
+
+Query: `findOne` `findAll`
+
+Mututation: `create` `update` `remove`
 
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
+```
+
+## Prisma
+
+Obs: Será necessário ter o banco de dados Postgres instalado e configurado sua credencias no `.env`
+
+```bash
+$ yarn prisma migrate dev
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ yarn start
 
 # watch mode
-$ npm run start:dev
+$ yarn start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn test:e2e
 
 # test coverage
-$ npm run test:cov
+$ yarn test:cov
 ```
 
 ## Support
