@@ -1,0 +1,41 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Content {
+  id: ID!
+  name: String!
+  description: String!
+  type: Types!
+  views: Float!
+}
+
+enum Types {
+  video
+  pdf
+  image
+}
+
+type Query {
+  findAll: [Content!]!
+  findOne(id: String!): Content!
+}
+
+type Mutation {
+  createContent(createContentInput: CreateContentInput!): Content!
+  updateContent(updateContentInput: UpdateContentInput!): Content!
+  removeContent(id: String!): Content!
+}
+
+input CreateContentInput {
+  name: String!
+  description: String!
+  type: Types!
+}
+
+input UpdateContentInput {
+  name: String
+  description: String
+  type: Types
+  id: ID!
+}
