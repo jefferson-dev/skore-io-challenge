@@ -26,6 +26,8 @@
 
 Api developed using GraphQL with the following Query and Mutation:
 
+Rota: `http://localhost:3000/graphql`
+
 Query: `findOne` `findAll`
 
 Mututation: `create` `update` `remove`
