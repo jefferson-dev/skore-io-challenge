@@ -32,6 +32,13 @@ Query: `findOne` `findAll`
 
 Mututation: `create` `update` `remove`
 
+For the request, it will be necessary to inform the User token to use the Query or Administrator to use the Query and Mutations
+
+ADMIN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlMjRkZjVkLTNhMDQtNDJjYi1hOWE0LWY1OThhZWUxMGUwOCIsIm5hbWUiOiJKb3PDqSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NjM3NDc2MiwiZXhwIjo4ODA1NjI4ODM2Mn0.B5wTHZM4SpZ-RzoJPElzTmX1Z0f_j4DuVPWqWLivBmg
+
+
+USER: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUwZDZjZGVhLWU3OTctNGEzMy04MTlkLWMwYTkwNTNkNWJkMCIsIm5hbWUiOiJKb8OjbyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjU2Mzc0NzYyLCJleHAiOjg4MDU2Mjg4MzYyfQ.D7ehgjZhRpjuHvWzNbh9u91WkBMweu8wprxEEZ0jM_0
+
 ## Installation
 
 ```bash
@@ -40,7 +47,7 @@ $ yarn install
 
 ## Prisma
 
-Obs: Será necessário ter o banco de dados Postgres instalado e configurado sua credencias no `.env`
+Note: You will need to have the Postgres database installed and configured your credentials in `.env`
 
 ```bash
 $ yarn prisma migrate dev
